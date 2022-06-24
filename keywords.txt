@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For	Deneyap_Mikrofon
+#######################################
+
+#######################################
+# Library (KEYWORD1)
+#######################################
+Deneyap_Mikrofon	KEYWORD1
+
+####################################
+# Class (KEYWORD1)
+####################################
+Microphone	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+isConnected	KEYWORD2
+getFwVersion	KEYWORD2
+setI2Caddress	KEYWORD2
+ReadMicrophoneAnalog	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
