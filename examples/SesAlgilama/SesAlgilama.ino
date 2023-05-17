@@ -3,16 +3,16 @@
  *
  *   Bu örnekte temel konfigürasyon ayarları yapılmaktadır.
  *   Sensörden gelen ses değerleri seri monitöre yazdırmaktadır. Ses seviyesi belirlenen threshold değerini aşınca
- *   LEDB pinine bağlı led yanmaktadır. Ses değişimi SERİ PORT ekranında grafiksek olarak izlenmelidir.
+ *   LED_BUILTIN pinine bağlı led yanmaktadır. Ses değişimi SERİ PORT ekranında grafiksek olarak izlenmelidir.
  *
  *   Bu algılayıcı I2C haberleşme protokolü ile çalışmaktadır. 
  *
  *   Bu örnek Deneyap Mikrofon için oluşturulmuştur
- *      ------> www.....com <------ //docs
+ *      ------> https://docs.deneyapkart.org/tr/content/contentDetail/deneyap-modul-deneyap-mikrofon-m15 <------
  *      ------> https://github.com/deneyapkart/deneyap-mikrofon-arduino-library <------
  *
 */
-#include <Deneyap_Mikrofon.h>                           // Deneyap_Mikrofon.h kutuphanesi eklenmesi
+#include <Deneyap_Mikrofon.h>                           // Deneyap Mikrofon kutuphanesi eklenmesi
 
 Microphone Mikrofon;                                    // Microphone için class tanımlaması
 #define threshold 525                                   // Verilen eşik değeri ortamın ses durumuna göre istenilen değer ile değiştirilmeli.
@@ -24,7 +24,7 @@ void setup() {
         Serial.println("I2C bağlantısı başarısız ");     // I2C bağlantısı başarısız olursa seri monitore yazdırılması
         while (1);
     }
-    pinMode(LEDB, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
@@ -34,10 +34,10 @@ void loop() {
 
     if (SesDeger > threshold) {
         Serial.println("####Ses Algılandı####");
-        digitalWrite(LEDB, HIGH);
+        digitalWrite(LED_BUILTIN, HIGH);
     }
     else {
-        digitalWrite(LEDB, LOW);
+        digitalWrite(LED_BUILTIN, LOW);
     }
     delay(10);
 }

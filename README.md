@@ -1,9 +1,9 @@
-# Deneyap Microphone ICS-40619 Arduino Library
+# Deneyap Microphone Arduino Library
 [FOR TURKISH VERSION](docs/README_tr.md) ![trflag](https://github.com/deneyapkart/deneyapkart-arduino-core/blob/master/docs/tr.png)
 
 ***** Add photo ****
 
-Arduino library for Deneyap Microphone ICS-40619
+Arduino library for Deneyap Microphone 
 
 ## :mag_right:Specifications 
 - `Product ID` **M15**, **mpv1.0**
@@ -20,7 +20,7 @@ Arduino library for Deneyap Microphone ICS-40619
 | 0x38 | address when ADR1 and ADR2 pads are shorted |
 
 ## :closed_book:Documentation 
-Deneyap Microphone ICS-40619
+[Deneyap Microphone](https://docs.deneyapkart.org/en/content/contentDetail/deneyap-modul-deneyap-mikrofon-m15)
 
 [ICS-40619](https://invensense.tdk.com/wp-content/uploads/2016/02/ICS-40619-Datasheet.pdf?ref_disty=digikey)
 

@@ -26,7 +26,7 @@ Library includes:
  */
 bool Microphone::begin(uint8_t address, TwoWire &port) {
     Wire.begin();
-#if defined(ARDUINO_DYM)
+#if defined (ARDUINO_DYM) || defined (ARDUINO_DYMv2)
     Wire.setClock(100000);
 #else
     Wire.setClock(50000);

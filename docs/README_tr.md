@@ -19,7 +19,7 @@ Deneyap Mikrofon ICS-40619 için Arduino kütüphanesidir.
 | 0x38 | ADR1 ve ADR2 kısa devre yapıldığındaki adres |
 
 ## :closed_book:Dokümanlar
-Deneyap Mikrofon ICS-40619
+[Deneyap Mikrofon](https://docs.deneyapkart.org/en/content/contentDetail/deneyap-modul-deneyap-mikrofon-m15)
 
 [ICS-40619](https://invensense.tdk.com/wp-content/uploads/2016/02/ICS-40619-Datasheet.pdf?ref_disty=digikey)
 
